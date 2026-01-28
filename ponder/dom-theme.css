@@ -1,0 +1,32 @@
+
+body {
+    background-size: 100vw 100vh; /*100% of viewport width and height, takes entire page*/
+    margin: 0;
+    padding: 20px;
+    transition: background-image 1s ease; /*timed transition between themes choosen */
+
+}
+
+.container {
+    text-align: center;
+    padding: 2rem; 
+ /*rem refers to the root, refering to twice as big as 16 pixels (Or parents set size like if it was set to 20px, 16 is default if not set). threeem would be 3 times as big */
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+select {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#logo {
+    margin-top: 1rem;
+    width: 300px;
+}
+
+.content {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+          
