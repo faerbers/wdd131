@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prove Responsive Design</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="coolpic.js" defer></script>
   </head>
 
   <body>
     <header>
       <h1 id="cool">Cool Pics 📷</h1>
-      <!--hamburger/responsive menu-->
+
       <button class="menu-btn">Menu</button>
-      <!--<div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>-->
-      <nav>
+      <nav class="hide">
         <a href="#">Home</a>
         <a href="#">People</a>
         <a href="#">Places</a>
@@ -25,37 +23,36 @@
       </nav>
     </header>
 
-    <main>
+    <main class="gallery">
       <h1 id="header_work">Current Work</h1>
-      <div>
-        <img src="images/norris-sm.jpg" alt="cool_pic">
-      </div>
-      <div>
-        <img src="images/norris-sm.jpg" alt="cool_pic">
-      </div>
-      <div>
-        <img src="images/norris-sm.jpg" alt="cool_pic">
-      </div>
-      <div>
-        <img src="images/norris-sm.jpg" alt="cool_pic">
-      </div>
-      <div>
-        <img src="images/norris-sm.jpg" alt="cool_pic">
-      </div>
-      <div>
-        <img src="images/norris-sm.jpg" alt="cool_pic">
-      </div>
-      <div>
-        <img src="images/norris-sm.jpg" alt="cool_pic">
-      </div>
-      <div>
-        <img src="images/norris-sm.jpg" alt="cool_pic">
-      </div>
-      <div>
-        <img src="images/norris-sm.jpg" alt="cool_pic">
-      </div>
+
+      <img src="images/norris-sm.jpg" alt="cool_pic">
+
+      <img src="images/norris-sm.jpg" alt="cool_pic">
+
+      <img src="images/norris-sm.jpg" alt="cool_pic">
+
+      <img src="images/norris-sm.jpg" alt="cool_pic">
+
+      <img src="images/norris-sm.jpg" alt="cool_pic">
+
+      <img src="images/norris-sm.jpg" alt="cool_pic">
+
+      <img src="images/norris-sm.jpg" alt="cool_pic">
+
+      <img src="images/norris-sm.jpg" alt="cool_pic">
+
+      <img src="images/norris-sm.jpg" alt="cool_pic">
+      <!--I agree this is werid but it was the only I found to work
+      with JS without messing up original HTML and CSS-->
     </main>
     <footer>@2026 Not a real site🙂</footer>
+
+    <dialog>
+      <img alt="image_to_add"><!--HTML flagged empty img but is remedied by JS-->
+      <button class="close-viewer">X</button>
+    </dialog>
+    
   </body>
 
 </html>

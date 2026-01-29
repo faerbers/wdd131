@@ -1,9 +1,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
-
 }
-
 header,
 footer {
   margin: 0;
@@ -25,8 +23,15 @@ footer {
     color: #616061;
 }
 nav a {
+    color: white;
+    display:block;
+    font-size: 30px;
+    padding: 10px;
+}
+.hide {
     display: none;
 }
+
 nav a:hover {
     text-decoration: none;
     color: #616061;
@@ -36,6 +41,7 @@ nav a:hover {
     padding: 15px;
     text-align: center;
 }
+
 /*main*/
 body {
     background-color: lightgray;
@@ -43,44 +49,82 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr;
-
     margin: 0 auto;
     text-align: center;
+}
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 4px 4px 10px 0 rgb(0, 0, 0); 
+}
+
+/*footer*/
+footer {
+    padding: 25px;
+    margin-top: 75px;
+
+}
+/*X button for looking at image */
+dialog img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 20vh auto;
+    border: none;
+    object-fit: contain;
+    max-width: 1250px;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer {
+    position: absolute;
+    top: 18vh;
+    right: 8vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+main.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    padding: 1rem;
 }
 #header_work {
     grid-column: 1 / -1;
     place-content: center;
     font-size: 40px;
 }
-img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border: 5px solid white;
-  box-shadow: 4px 4px 10px 0 rgb(0, 0, 0); 
 
-}
-div {
-    padding: 10px;
-}
-/*footer*/
-footer {
-    padding: 15px;
-}
 
 @media screen and (min-width: 700px) {
     main {
         grid-template-columns: 1fr 1fr;
-
+    }
+    .hide {
+        display: none;
+    }
+    main.gallery {
+        grid-template-columns: 1fr 1fr;
     }
 }
+
 
 @media screen and (min-width: 1000px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1100px;
     }
     .menu-btn {
         display: none;
+    }
+    .hide {
+        display: block;
     }
     nav a {
         display: inline-block;
@@ -89,7 +133,9 @@ footer {
         padding-left: 40px;
         margin-bottom: 20px;
     }
-    main {
+    main.gallery {
+        grid-template-columns: 1fr 1fr 1fr;
         max-width: 1100px;
     }
+
 }
