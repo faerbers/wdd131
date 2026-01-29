@@ -20,7 +20,7 @@ function openModal(e) {
     modalImage.src = full; //adds image to dialog>img
     modalImage.alt = alt;
 
-    modal.shoeModal();
+    modal.showModal();
 }
 // Close modal on button click
 closeButton.addEventListener('click', () => {
