@@ -22,7 +22,9 @@ hr {
     background-color: goldenrod;
     margin: 1em 0;
 }
-
+#hidden {
+    width: 80%;
+}
 p {
     text-align: right;
     padding-right: 50px;
