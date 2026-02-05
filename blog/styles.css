@@ -54,19 +54,7 @@ img {
     #hidden {
         background-color: white;
     }
-    .book {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(6,auto);
-        gap: 1.5rem 3rem;                         /* row gap / column gap */
-        position: relative;
-    }
-    .left {
-        border-right: 3px solid goldenrod;
-        padding-right: 1.5rem;          /* space between content and line */
-        /* height: 600px;                    ← this is the key line */
-        min-height: 100%;
-    }
+
     .left p {
         grid-column: 1;
         grid-row: 2 / 5;           
@@ -103,7 +91,7 @@ img {
         grid-template-columns: 1fr 2fr;
         grid-template-rows: repeat(6, auto);
         gap: 1.5rem 3rem;
-        position: relative;           /* only line needed for positioning */
+        position: relative;         
     }
 
     .book::after {
@@ -111,16 +99,16 @@ img {
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 33%;                    /* roughly the split between 1fr and 2fr */
+        left: 33%;                 
         width: 3px;
         background: goldenrod;
     }
 
     .left {
-        border-right: none;           /* remove your old border if you had it */
+        border-right: none;       
         padding-right: 1.5rem;
-        /* delete height and min-height lines completely */
+
     }
 
-    /* keep all your other rules exactly as they are */
+
 }
