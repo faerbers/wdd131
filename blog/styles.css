@@ -32,6 +32,7 @@ h2 {
     color: darkred;
     padding-left: 50px;
     font-size: 30px;
+
 }
 img {
     display: block;
@@ -44,6 +45,7 @@ img {
 }
 #copyright {
     text-align: center;
+    font-size: 25px;
 }
 
 
@@ -55,14 +57,70 @@ img {
     .book {
         display: grid;
         grid-template-columns: 1fr 2fr;
-
+        grid-template-rows: repeat(6,auto);
+        gap: 1.5rem 3rem;                         /* row gap / column gap */
+        position: relative;
     }
-    p {
-        grid-column: 1/2;
+    .left {
+        border-right: 3px solid goldenrod;
+        padding-right: 1.5rem;          /* space between content and line */
+        /* height: 600px;                    ← this is the key line */
+        min-height: 100%;
     }
-    hr, img, #desc {
+    .left p {
+        grid-column: 1;
+        grid-row: 2 / 5;           
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;               
+        align-items: flex-end;             
+    }
+    h2, img, #desc {
         grid-column: 2/3;
-        border-left: 3px solid goldenrod;
+
+
     }
 
+    h2 {
+        grid-column: 2;
+        grid-row: 1 / 2;          
+        margin-bottom: 1;     
+    }
+
+    img {
+        grid-column: 2;
+        grid-row: 1 / 5;
+        align-self: start;
+        margin-top: 6rem;    
+    }
+    #desc {
+        grid-column: 2;
+        grid-row: 5 / 6;
+    }
+    /**/
+    .book {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(6, auto);
+        gap: 1.5rem 3rem;
+        position: relative;           /* only line needed for positioning */
+    }
+
+    .book::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 33%;                    /* roughly the split between 1fr and 2fr */
+        width: 3px;
+        background: goldenrod;
+    }
+
+    .left {
+        border-right: none;           /* remove your old border if you had it */
+        padding-right: 1.5rem;
+        /* delete height and min-height lines completely */
+    }
+
+    /* keep all your other rules exactly as they are */
 }
