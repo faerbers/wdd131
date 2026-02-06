@@ -20,10 +20,11 @@ hr {
     border: none;
     height: 3px;
     background-color: goldenrod;
-    margin: 1em 0;
+    width: 95%;
+    margin: 0 auto;
 }
 #hidden {
-    width: 80%;
+    width: 90%;
 }
 p {
     text-align: right;
@@ -51,7 +52,7 @@ img {
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     #hidden {
         background-color: white;
     }
