@@ -59,11 +59,11 @@ const movieList = document.querySelector('#movie-list')
 
     article.innerHTML = html;
     movieList.appendChild(article);
+
+    });
+          
+
     
 //movieList.innerHTML += html; look at visoe for prev build
     //+=adds to HTML each time not replacing what was previously made, works but longer load times
     
-    });
-          
-
-
