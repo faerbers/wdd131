@@ -49,7 +49,7 @@ const movieList = document.querySelector('#meta-data')
 
 
     let html= `
-
+        <hr id="hidden">
         <div class="left">
             <p><strong>${book.date}</strong></p>
             <p><strong>${book.ages}</strong></p>
