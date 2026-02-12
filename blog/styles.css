@@ -7,9 +7,10 @@ h1 {
 }
 .main-nav {
     list-style-type: none;
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        justify-content: right;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: right;
+    padding-right: 50px;
 }
 li a {
     color: darkred;
