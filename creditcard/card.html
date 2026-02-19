@@ -16,10 +16,8 @@
       <section class="errors"></section>
       <form id="credit-card">
         <div class="front">
-          <div class="card-data-row">
             <div class="total-cost">TOTAL: $199</div>
             <div class="logo">💳</div>
-          </div>
           <p id="creditCardNumberContainer" class="cardnumbers" role="region"
             aria-labelledby="creditCardLabel">
             <label id="creditCardLabel" for="creditCardNumber">CARD NUMBER</label>
@@ -33,9 +31,9 @@
             </div>
             <div class="date-input"><!--Errors in 35,36,28. But give accessibility that all below is expDate-->
               <label for="expirationDate">EXPIRATION</label>
-              <input type="text" id="month" name="expMonth" placeholder="MM"
+              <input type="text" id="month" size="2" name="expMonth" placeholder="MM"
                 aria-labelledby="expirationDate" required>
-              <input type="text" id="year" name="expYear" placeholder="YY"
+              <input type="text" id="year" size="2" name="expYear" placeholder="YY"
                 aria-labelledby="expirationDate" required>
             </div>
 
@@ -44,7 +42,7 @@
           <div class="stripe"></div>
           <div class="CVC-group">
             <label for="cvc">CVC/CVV</label>
-            <input type="tel" maxlength="3" id="cvc" placeholder="xxx" required>
+            <input type="tel" size="3" maxlength="3" id="cvc" placeholder="xxx" required>
           </div>
         </div>
         <button type="submit">Submit</button>
