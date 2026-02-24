@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CharacterCard</title>
+    <meta name="Shelby Faerber" content="Author Name">
+    <meta name="description" content="chrater card for D&D like scenario">
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Snortleblat - level 5 Swamp Beast Diplomat">
+    <meta property="og:description"
+      content="Character card featuring Snortleblat with health, level, attack, and level-up interactions.">
+    <meta property="og:url" content="https://faerbers.github.io/wdd131/charactercard/index.html">
+    <meta property="og:image"
+      content="https://faerbers.github.io/wdd131/charactercard/images/snortleblat.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Snortleblat the Swamp Beast Diplomat">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Snortleblat: Swamp Beast Diplomat Character Card">
+    <meta name="twitter:description"
+      content="Interactive D&D-style character card: level up, take damage, and watch Snortleblat in action!">
+    <meta name="twitter:image"
+      content="https://faerbers.github.io/wdd131/charactercard/images/snortleblat.webp">
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="images/favicon.png">
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.jfif">
+    <!--styles and js-->
+    <link href="styles.css" rel="stylesheet">
+    <script defer src='character.js'></script>
+  </head>
+
+  <body>
+    <div class="card">
+      <img class='image' src="images/snortleblat.webp" alt="snortleblat">
+      <h1 class="name"></h1>
+        <div class="stats">
+            <p id="class"></p>
+            <p><strong>Level:</strong> <span id="level-number"></span></p>
+            <p><strong>Health:</strong> <span id="health-number"></span></p>
+        </div>
+      <div class="buttons">
+        <button>Attacked</button>
+        <button>Level Up</button>
+      </div>
+    </div>
+  </body>
+
+</html>
