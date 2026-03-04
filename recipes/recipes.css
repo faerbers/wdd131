@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Header*/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.25em;
+    margin-bottom: 30px;
+}
+
+#logo {
+    max-width: 150px;
+
+}
+
+main {
+    border: 2.5px solid black;
+    border-radius: 15px;
+}
+
+/*search bar*/
+.input-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-width: 750px;
+    margin-bottom: 30px;
+    border: 2.5px solid black;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+#recipe-finder {
+    width: 100%;
+
+}
+
+.submit-button img {
+    width: 50px; /* Set the desired image size */
+    height: 50px;
+}
+
+/*main*/
+main {
+    display: flex;
+    flex-direction: row;
+
+}
+.media-card {
+    padding: 15px 15px;
+}
+h2 {
+    color: cornflowerblue;
+}
+main img {
+    max-width: 100%;
+}
+p {
+    display: none;
+}
+
+
+/*footer*/
+footer {
+    padding-top: 20px;
+}
+
+.social {
+  display: flex; /* Aligns items in a row */
+  justify-content: center; /* Optional: centers them horizontally */
+  gap: 10px; /* Optional: adds space between images */
+}
+
+.social img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+}
+.flaticon {
+    margin-top: 30px;
+
+}
+@media screen and (min-width: 600px) {
+    main {
+        max-width: 70%;
+        display: flex;
+    }
+    main button{
+        justify-content: flex-end;
+        max-width: 100px;
+        margin-bottom: 25px;
+    }
+    .media-card { /*unsure how this is adding a lot of white space*/
+        display: flex;
+        padding: 15px 0;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .media-card-content {
+        flex-direction: column; /*needed*/
+        flex: 0 1 40ch;
+    }
+    main img {
+        flex: 3 1 400px;
+        padding: 15px;
+        gap: 15px;
+    }
+    .media-card-content {
+        display: flex;
+        justify-content: flex-end;
+        flex: 0 1 50ch;
+    }
+    p {
+        display: flex;
+    }    
+
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+
+        max-width: 70em;
+    }
+
+    .social {
+        justify-content: flex-end;
+        align-content: flex-end;
+        align-self: flex-end;
+    }
+    .flaticon {
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-self: flex-start;
+        margin-right: 15em;
+    }
+}
