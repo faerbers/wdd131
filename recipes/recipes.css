@@ -94,7 +94,7 @@ footer {
         max-width: 100px;
         margin: 25px 5px;
     }
-    .media-card { /*unsure how this is adding a lot of white space*/
+    .media-card { 
         display: flex;
         padding: 15px 0;
         gap: 20px;
