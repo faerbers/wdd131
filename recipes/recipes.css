@@ -92,7 +92,7 @@ footer {
     main button{
         justify-content: flex-end;
         max-width: 100px;
-        margin-bottom: 25px;
+        margin: 25px 5px;
     }
     .media-card { /*unsure how this is adding a lot of white space*/
         display: flex;
