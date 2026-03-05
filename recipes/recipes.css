@@ -15,8 +15,7 @@ header {
 }
 
 #logo {
-    max-width: 150px;
-
+    max-width: 25%;
 }
 
 /*search bar*/
@@ -33,7 +32,6 @@ header {
 }
 #recipe-finder {
     width: 100%;
-
 }
 input {
     border: none;
@@ -47,6 +45,7 @@ input:focus {
     height: 50px;
     border-left: 3px solid black;
     padding-left: 20px;
+    background-color: transparent;
 }
 
 /*main*/
@@ -91,6 +90,10 @@ footer {
 
 }
 @media screen and (min-width: 600px) {
+    #logo{
+
+        flex: 1 1 300px;
+    }
     main {
         max-width: 70%;
         display: flex;
@@ -130,7 +133,6 @@ footer {
         display: flex;
         flex-direction: row-reverse;
 
-        max-width: 70em;
     }
 
     .social {
