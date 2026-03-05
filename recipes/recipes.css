@@ -30,7 +30,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 70%;
-    max-width: 750px;
+    max-width: 1100px;
     margin-bottom: 30px;
     border: 2.5px solid black;
     border-radius: 15px;
@@ -113,7 +113,7 @@ footer {
     .media-card-content {
         display: flex;
         justify-content: flex-end;
-        flex: 0 1 50ch;
+        flex: 0 1 350px;
     }
     p {
         display: flex;
