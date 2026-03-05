@@ -19,11 +19,6 @@ header {
 
 }
 
-main {
-    border: 2.5px solid black;
-    border-radius: 15px;
-}
-
 /*search bar*/
 .input-search {
     display: flex;
@@ -40,16 +35,26 @@ main {
     width: 100%;
 
 }
-
+input {
+    border: none;
+    font-size: 25px;
+}
+input:focus {
+    outline: none;
+}
 .submit-button img {
     width: 50px; /* Set the desired image size */
     height: 50px;
+    border-left: 3px solid black;
+    padding-left: 20px;
 }
 
 /*main*/
 main {
     display: flex;
     flex-direction: row;
+    border: 2.5px solid black;
+    border-radius: 15px;
 
 }
 .media-card {
@@ -105,6 +110,7 @@ footer {
         flex-direction: column; /*needed*/
         flex: 0 1 40ch;
     }
+
     main img {
         flex: 3 1 400px;
         padding: 15px;
