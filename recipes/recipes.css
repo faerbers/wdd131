@@ -90,9 +90,7 @@ button img {
 }
  
 /*help*/
-label {
-    display: none;
-}
+
 .search {
     display: flex;
     align-items: center;
