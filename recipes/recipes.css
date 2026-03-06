@@ -19,63 +19,36 @@ header {
 }
 
 /*search bar*/
-.input-search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    max-width: 1100px;
-    margin-bottom: 30px;
-    border: 2.5px solid black;
-    border-radius: 15px;
-    padding: 10px 10px;
-    
-}
-#recipe-finder {
-    width: 100%;
-}
-input {
-    border: none;
-    font-size: 25px;
-}
-input:focus {
-    outline: none;
-}
-.submit-button img {
-    width: 50px; /* Set the desired image size */
-    height: 50px;
-    border-left: 3px solid black;
-    padding-left: 20px;
-    flex: 0 0 auto;
-    padding: .75rem .9rem;
-    background: white;
-    cursor: pointer;
-}
+
 /*test*/
 .search{
     width: 70%;
     max-width: 1100px;
     display: flex;
-    align-items: stretch;
     gap: .5rem;
     border: 3px solid black;
-    border-radius: 15px;
     padding: 10px 10px;
+    align-items: center;
+    gap: 8px;                    /* ← space between input and button */
     margin-bottom: 30px;
+    border-radius: 15px;
+    padding: 12px 18px;          /* more generous on small screens */
+
 }
  
 .search-input{
-  flex: 1 1 auto;
-  padding: .75rem .9rem;
-  border: 1px solid var(--border);
-  border-radius: .75rem;
-  font-size: 1.5rem;
+    flex: 1 1 auto;
+    padding: .75rem .9rem;
+    border: 1px solid var(--border);
+    border-radius: .75rem;
+    font-size: 1.5rem;
+    padding: 12px 16px;          /* ← give the text field internal space */
+    min-width: 0;                /* helps prevent overflow on very narrow screens */  
 }
 button img {
     width: 50px;
     height: 50px;
     padding-left: 10px;
-
     flex: 0 0 auto;
     padding: .75rem .9rem;
     background: white;
@@ -87,41 +60,14 @@ button img {
     background: white;
     cursor: pointer;
     border-left: 3px solid black;
-}
- 
-/*help*/
-label {
-    display: none;
-}
-.search {
-    display: flex;
-    align-items: center;
-    gap: 8px;                    /* ← space between input and button */
-  
-    max-width: 1100px;
-    margin-bottom: 30px;
-    border: 2.5px solid black;
-    border-radius: 15px;
-    padding: 12px 18px;          /* more generous on small screens */
-
-}
-
-.search-input {
-    flex: 1 1 auto;
-    padding: 12px 16px;          /* ← give the text field internal space */
-    border-radius: 0.75rem;
-    font-size: 1.5rem;
-    min-width: 0;                /* helps prevent overflow on very narrow screens */
-}
-
-.search-btn {
-    padding: 12px 16px;          /* consistent with input */
-
     background: white;
     cursor: pointer;
-    border-left: 3px solid black; /* keep your accent if you like it */
-
+    border-left: 3px solid black; /* keep your accent if you like it */    
 }
+label {
+    display: none;
+} 
+
 /*main*/
 main {
     display: flex;
