@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
@@ -21,61 +22,65 @@
     <link rel="icon" href="/favicon.ico"> <!---->
     <!-- One Apple Touch Icon (iOS home screen) -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> <!---->
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="recipes.css" />
+  </head>
 
-    <link rel="stylesheet" href="recipes.css"/>
-                           
-</head>
-
-<body>
+  <body>
     <header>
-    <img id="logo" src="images/recipe-book.png" alt="recipebook logo">
-    <h1>RECIPEBOOK</h1>
+      <img id="logo" src="images/recipe-book.png" alt="recipebook logo">
+      <h1>RECIPEBOOK</h1>
     </header>
 
     <div class="input-search">
-    <input type="text" id="recipe-finder" name="recipeSearchBar" placeholder="Find a recipe">
-    <button type="submit" class="submit-button">
+      <input type="text" id="recipe-finder" name="recipeSearchBar" placeholder="Find a recipe">
+      <button type="submit" class="submit-button">
         <img src="images/search.svg" alt="Submit">
-    </button>
+      </button>
     </div>
 
+    <form class="search" action="#" role="search">
+      <label class="sr-only" for="q"></label>
+      <input id="q" class="search__input" type="search" placeholder="Find a recipe">
+      <button class="search__btn" type="submit" aria-label="Search">
+        <img class="search__icon" src="images/search.svg" alt="">
+      </button>
+    </form>
+
     <main>
-        <section class="media-card">
-            <div class="media-card-image">
-              <img src="images/apple-crisp.jpg" alt="apple crisp with ice cream">
-            </div>
-            <div class="media-card-content">
-                <button><strong></strong>dessert</button>
-              <h2>APPLE CRISP</h2>
-                <span
-                    class="rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-              <p>This apple crisp recipe is a simple yet delicious fall dessert that's great
-                 served warm with vanilla ice cream.</p>
-            </div>
-        </section>
-    </main>            
-   
-    <footer>
-        
-        <div class="social">
-            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
-            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
-            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+      <section class="media-card">
+        <div class="media-card-image">
+          <img src="images/apple-crisp.jpg" alt="apple crisp with ice cream">
         </div>
-        <div class="flaticon">
+        <div class="media-card-content">
+          <button><strong></strong>dessert</button>
+          <h2>APPLE CRISP</h2>
+          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+          </span>
+          <p>This apple crisp recipe is a simple yet delicious fall dessert that's great
+            served warm with vanilla ice cream.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+
+      <div class="social">
+        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+        <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+        <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+      </div>
+      <div class="flaticon">
         <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
-        Recipe icons created by Freepik - Flaticon</a>  
-        </div>                            
+          Recipe icons created by Freepik - Flaticon</a>
+      </div>
     </footer>
-</body>
+  </body>
+
 </html>
