@@ -72,18 +72,32 @@ label {
 main {
     display: flex;
     flex-direction: row;
-    border: 2.5px solid black;
     border-radius: 15px;
 
 }
 .media-card {
     padding: 15px 15px;
+    border: 2.5px solid black;
+    margin-bottom: 5px;
+    border-radius: 15px;
 }
 h2 {
     color: rgb(45, 100, 200);
 }
 main img {
     max-width: 100%;
+}
+.tags {
+    display: inline;
+    margin: 0%;
+    padding: 0%;
+}
+.tags button {
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0%;
+    flex-wrap: nowrap;
 }
 p {
     display: none;

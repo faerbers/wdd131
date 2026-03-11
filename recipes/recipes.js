@@ -281,8 +281,9 @@ const recipes = [
 	}
 ];            
                     
-let recipeContainer = document.querySelector('#media-card');
-let searchButton = document.querySelector('button');
+let recipeContainer = document.querySelector('#recipe-container');
+let searchButton = document.querySelector('.search-btn');
+let searchInput = document.querySelector('.search-input');
 
 searchButton.addEventListener('click', search);
 
@@ -322,14 +323,18 @@ let randomNum = Math.floor(Math.random() * recipes.length);
 
 
 function recipeTemplate(recipes) {
-    return `<div class="media-card-image">
+    return `<div class='media-card'>
+        <div class="media-card-image">
                 <img src="${recipes.image}">
             </div>
             <div class="media-card-content">
-            <button><strong></strong>${tagTemplate(recipes.tags)}}</button>
-            <h2>${recipes.name}</h2>
-            <p>${ratingTemplate(recipes.rating)}</p>
-            <p>${recipes.description}</p>
+                <div class='tags'>
+                    ${tagTemplate(recipes.tags)}
+                </div>
+                <h2>${recipes.name}</h2>
+                <p>${ratingTemplate(recipes.rating)}</p>
+                <p>${recipes.description}</p>
+            </div>
             </div>`
 }
 
