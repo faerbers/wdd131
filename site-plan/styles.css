@@ -7,10 +7,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #396e94;
-  --secondary-color: #e7c24f;
-  --accent1-color: #a42212;
-  --accent2-color: white;
+  --primary-color: #142FBC;
+  --secondary-color: #FFFFFF;
+  --accent1-color: #EBCC6F;
+  --accent2-color: #58DBCA;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Piedra", Arial, Helvetica, sans-serif;
