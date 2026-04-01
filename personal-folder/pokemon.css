@@ -160,6 +160,7 @@ p {
   margin-right: auto;
   background-color: darkgray;
   border-radius: 50%;
+  max-width: 500px;
 }
  /*Footer*/
  footer {
