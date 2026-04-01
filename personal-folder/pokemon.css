@@ -101,7 +101,7 @@ p {
   margin-bottom: 50px;
 }
 .buttons button img {
-  max-width: 50%;
+  max-width: 10em;
 }
 #grass {
   background-color: transparent;
