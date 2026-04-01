@@ -53,24 +53,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const fireBtn = document.querySelector('#fire');
     const waterBtn = document.querySelector('#water');
 
-
     function showStarter(pokemon) {
         basicPokeball.style.display = 'none';     
         pokeballDiv.innerHTML = starterTemplate(pokemon);
     }
 
-    // Grass button
-    grassBtn.addEventListener('click', () => {
-        showStarter(starters[0]);
-    });
+    const buttons = [
+        { btn: grassBtn, type: 'Grass' },
+        { btn: fireBtn,  type: 'Fire' },
+        { btn: waterBtn, type: 'Water' }
+    ];
 
-    // Fire button
-    fireBtn.addEventListener('click', () => {
-        showStarter(starters[1]);
-    });
-
-    // Water button
-    waterBtn.addEventListener('click', () => {
-        showStarter(starters[2]);
+    buttons.forEach(item => {
+        item.btn.addEventListener('click', () => {
+            const pokemon = starters.find(p => p.type === item.type);
+            showStarter(pokemon);
+        });
     });
 });

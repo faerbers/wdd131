@@ -28,11 +28,11 @@
 }
 h1 {
   display: flex;
-  size: 200px;
   color: #142FBC;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: clamp(2rem, 6vw, 4rem);
 }
 nav {
   font-family: "Lato", Helvetica, sans-serif;
@@ -169,6 +169,11 @@ p {
 .footer-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;                 
+  align-items: center;         
+  max-width: 1200px;           
+  margin: 0 auto;               
+  padding: 0 20px;
 
 }
 footer p{
@@ -177,9 +182,8 @@ footer p{
   max-width: fit-content;
 }
 .footer-nav {
-  padding-top: 23px;
   grid-column: 2/3;
-  word-spacing: 5px;
+  word-spacing: 10px;
 }
 .footer-nav a{
   color: #EBCC6F;
@@ -195,34 +199,16 @@ footer .social img {
     grid-column: 3/4;
 }
 
-/*footer {
-    background-color: #1D5A1D;
-    padding: 25px 50px;
-    margin-top: 200px;
-    font-size: larger;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-footer p {
-    font-size: 1em;
-    color: white;
-}
-footer p a:hover {
-    text-decoration: underline;
-    color: #D11616;
-}
-footer a {
-    text-decoration: none;
-    color: #F5D000;
-}
-*/
 
  @media screen and (min-width: 1000px) {
   /*Header*/
-  h1{
-    font-size: 3em;
-    padding-left: 30px;
+#top-header {
+    justify-content: center;    /* Keeps everything centered */
+    gap: 30px;
+  }
+  
+  h1 {
+    font-size: 3.2rem;
   }
   /*Home*/
 .trainer-pic {
@@ -237,4 +223,6 @@ footer a {
   width: 800px;
 }
   /*Starters*/
+  /*Footer*/
+
  }
