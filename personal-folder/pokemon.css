@@ -130,8 +130,8 @@ p {
 }
 .pokeball{
   display: grid;
-  grid-template-columns: 1fr 400px 1fr;
-  grid-template-rows: 2fr 80px 2fr;
+  grid-template-columns: 1fr 450px 1fr;
+  grid-template-rows: 1fr .5fr 2fr;
   grid-gap: 15px
 }
 .pokeball img {
@@ -141,14 +141,15 @@ p {
   grid-row: 1/2;
 }
 .pokeball h3 {
-  font-size: 3em;
+  font-size: 9em;
   text-align: center;
   grid-column: 2/3;
   grid-row: 2/3;
-  padding-bottom: 10px;
+  padding: 0;
+  margin: 0;
 }
 .pokeball ul {
-  font-size: 1.5em;
+  font-size: 3em;
   word-spacing: 10px;
   grid-column: 2/3;
   grid-row: 3/4;
